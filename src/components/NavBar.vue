@@ -6,14 +6,16 @@ const router = useRouter();
 </script>
 
 <template>
-  <ul>
-    <li>
-      <a @click="router.push('/')">Home</a>
-    </li>
-    <li>
-      <a @click="router.push('/playground')">Playground</a>
-    </li>
-  </ul>
+  <nav>
+    <ul>
+      <li>
+        <a @click="router.push('/')">Home</a>
+      </li>
+      <li>
+        <a @click="router.push('/playground')">Playground</a>
+      </li>
+    </ul>
+  </nav>
 </template>
 
 <style scoped>

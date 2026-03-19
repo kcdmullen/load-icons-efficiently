@@ -27,7 +27,7 @@ const { isListening, isSupported, stop, result, start, error } = useSpeechRecogn
           <v-btn v-if="!isListening" @click="start" color="success" prepend-icon="mdi-content-save">
             Speak
           </v-btn>
-          <v-btn v-if="isListening" class="orange" @click="stop" color="danger" prepend-icon="mdi-stop-circle">
+          <v-btn v-if="isListening" class="orange" @click="stop" color="error" prepend-icon="mdi-stop-circle">
             Stop
           </v-btn>
         </div>

@@ -45,9 +45,10 @@ export default createVuetify({
           secondary: '#75787B',
           success: '#198754',
           info: '#1e72fe',
-          danger: '#DA291C',
+          error: '#DA291C',
           warning: '#ffc107',
-          lightfill: '#f1f3f5',
+          background: '#BFC9D1',
+          surface: '#cdd8e1',
         },
       },
       dark: {
@@ -56,8 +57,10 @@ export default createVuetify({
           secondary: '#75787B',
           success: '#198754',
           info: '#1e72fe',
-          danger: '801b13',
+          error: '801b13',
           warning: '#ffc107',
+          background: '#0f172a', // slate-900 vibe
+          surface: '#1e293b'
         },
       },
     },

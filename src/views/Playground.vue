@@ -24,28 +24,12 @@ const desserts = [
     name: 'Jelly bean',
     calories: 375,
   },
-  {
-    name: 'Lollipop',
-    calories: 392,
-  },
-  {
-    name: 'Honeycomb',
-    calories: 408,
-  },
-  {
-    name: 'Donut',
-    calories: 452,
-  },
-  {
-    name: 'KitKat',
-    calories: 518,
-  },
 ];
 </script>
 <template>
   <h1>Playground</h1>
   <section>
-    <v-table style="min-width: 350px;">
+    <v-table style="min-width: 350px;" striped="odd" density="compact">
       <thead>
         <tr>
           <th class="text-left">
@@ -63,5 +47,32 @@ const desserts = [
         </tr>
       </tbody>
     </v-table>
+  </section>
+
+  <section class="my-4">
+      <v-card class="mx-auto" prepend-icon="$vuetify" subtitle="The #1 Vue UI Library" width="400">
+        <template v-slot:title>
+          <span class="font-weight-black">Welcome to Vuetify</span>
+        </template>
+
+        <v-card-text class="bg-surface-light pt-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ratione debitis quis est labore
+          voluptatibus! Eaque cupiditate minima, at placeat totam, magni doloremque veniam neque porro libero rerum unde
+          voluptatem!
+        </v-card-text>
+      </v-card>
+  </section>
+  <v-divider></v-divider>
+  <section>
+    <v-row>
+      <v-col cols="12" class="d-flex justify-center">
+        <v-btn color="primary" class="ma-2">Primary</v-btn>
+        <v-btn color="secondary" class="ma-2">Secondary</v-btn>
+        <v-btn color="success" class="ma-2">Success</v-btn>
+        <v-btn color="info" class="ma-2">Info</v-btn>
+        <v-btn color="error" class="ma-2">Danger</v-btn>
+        <v-btn color="warning" class="ma-2">Warning</v-btn>
+      </v-col>
+    </v-row>
   </section>
 </template>
